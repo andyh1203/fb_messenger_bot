@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from config import PAGE_ACCESS_TOKEN, VERIFY_TOKEN
 
 from flask import Flask, request
@@ -77,7 +77,10 @@ def send_message(recipient, text):
     headers = {"Content-Type": "application/json"}
 
     if display_pokemon is not None:
+<<<<<<< HEAD
         print("Inside here")
+=======
+>>>>>>> feature_a
         print("Display pokemon: {}".format(display_pokemon))
         if display_pokemon != text:
             data = json.dumps({
@@ -117,6 +120,7 @@ def send_message(recipient, text):
 
 if __name__ == '__main__':
     app.run()
+<<<<<<< HEAD
 =======
 from config import PAGE_ACCESS_TOKEN, VERIFY_TOKEN
 
@@ -237,3 +241,6 @@ def send_message(recipient, text):
 if __name__ == '__main__':
     app.run()
 >>>>>>> 1d31ab3da431678da55a73cdf6d4a425d5cb1ee1
+=======
+>>>>>>> Remove a print stmt
+>>>>>>> feature_a
