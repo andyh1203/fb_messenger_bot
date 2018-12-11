@@ -76,7 +76,6 @@ def send_message(recipient, text):
     headers = {"Content-Type": "application/json"}
 
     if display_pokemon is not None:
-        print("Inside here")
         print("Display pokemon: {}".format(display_pokemon))
         if display_pokemon != text:
             data = json.dumps({
@@ -116,3 +115,4 @@ def send_message(recipient, text):
 
 if __name__ == '__main__':
     app.run()
+>>>>>>> Remove a print stmt
